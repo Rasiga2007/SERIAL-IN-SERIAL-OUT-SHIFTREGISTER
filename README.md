@@ -28,15 +28,29 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 /* write all the steps invloved */
 
 **PROGRAM**
+module exp5(sum,cout,a,b,cin);
+output sum;
+output cout;
+input a;
+input b;
+input cin;
 
+wire w1,w2,w3;
+
+assign w1=a^b;
+assign w2=a&b;
+assign w3=w1&cin;
+assign sum=w1^cin;
+assign cout=w2|w3;
+endmodule
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:
+Developed by:RASIGA S RegisterNumber:212225220081
 
 */
 
 **RTL LOGIC FOR SISO Shift Register**
-
+![Output](sr2.jpeg)
 **TIMING DIGRAMS FOR SISO Shift Register**
-
+![Output](sr1.jpeg)
 **RESULTS**
