@@ -28,6 +28,7 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 /* write all the steps invloved */
 
 **PROGRAM**
+```
 module exp5(sum,cout,a,b,cin);
 output sum;
 output cout;
@@ -43,6 +44,8 @@ assign w3=w1&cin;
 assign sum=w1^cin;
 assign cout=w2|w3;
 endmodule
+```
+
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
 Developed by:RASIGA S RegisterNumber:212225220081
